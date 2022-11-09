@@ -19,15 +19,8 @@ void	ft_putstr_fd(char *str)
 
 	i = 0;
 	while (str[i])
+	{
+		write (fd, &str, 1);
 		i++;
-	return (i);
-}
-void	ft_putchar(char c)
-{
-	write (1, &c, 1);
-}
-int	main(void)
-{
-	printf("%d", ft_putstr_fd("blablaablabla"));
-	return 0;
+	}
 }
