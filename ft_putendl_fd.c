@@ -5,10 +5,9 @@ void	ft_putendl_fd(char *s, int fd)
 	 int i;
  
  	i = 0;
- 	while (str[i])
+ 	while (s[i])
 	{
-		write (fd, &str, 1);
+		write (fd, &s, 1);
 		i++;
-		write (1, /n, 2);
 	}
 }
