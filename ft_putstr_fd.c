@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-void	ft_putstr_fd(char *str)
+void	ft_putstr_fd(char *str, int fd)
 {
 	int i;
 
