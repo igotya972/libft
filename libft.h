@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                        :+:      :+:    :+:   */
+/*   lib.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 17:54:09 by dferjul           #+#    #+#             */
-/*   Updated: 2022/11/11 11:12:12 by dferjul          ###   ########.fr       */
+/*   Created: 2022/11/07 15:25:11 by dferjul           #+#    #+#             */
+/*   Updated: 2022/11/11 11:16:51 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#ifndef FT_H
+# define FT_H
+#include <string.h>
 #include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-void	ft_putstr_fd(char *str, int fd)
-{
-	int i;
+int	ft_isalpha(int c);
+int	ft_isdigit(int c);
+void	ft_putstr_fd(char *s, int fd);
 
-	i = 0;
-	while (str[i])
-	{
-		write (fd, &str[i], 1);
-		i++;
-	}
-}
+#endif
