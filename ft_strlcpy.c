@@ -6,13 +6,14 @@
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 14:03:04 by dferjul           #+#    #+#             */
-/*   Updated: 2022/11/11 14:03:07 by dferjul          ###   ########.fr       */
+/*   Updated: 2022/11/12 19:29:04 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 
-size_t	ft_strlcpy(char * restrict dst, const char * restrict src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	unsigned int	i;
 	unsigned int	count;

@@ -1,24 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lib.h                                              :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 15:25:11 by dferjul           #+#    #+#             */
-/*   Updated: 2022/11/11 11:16:51 by dferjul          ###   ########.fr       */
+/*   Created: 2022/11/12 19:31:28 by dferjul           #+#    #+#             */
+/*   Updated: 2022/11/12 19:49:33 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_H
-# define FT_H
+
+#ifndef LIBFT_H
+# define LIBFT_H
 #include <string.h>
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-void	ft_putstr_fd(char *s, int fd);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+void	ft_bzero(void *s, size_t n);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
+void 	*ft_memset(void *b, int c, size_t len);
+int		ft_putchar_fd(char c);
+void 	ft_putendl_fd(char *s, int fd);
+void 	ft_putnbr_fd(int n, int fd);
+void 	ft_putstr_fd(char *s, int fd);
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
+char	*ft_strchr(const char *s, int c);
+size_t	ft_strlen(const char *s);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
 
 #endif
