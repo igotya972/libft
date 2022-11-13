@@ -6,7 +6,7 @@
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 19:31:28 by dferjul           #+#    #+#             */
-/*   Updated: 2022/11/12 19:49:33 by dferjul          ###   ########.fr       */
+/*   Updated: 2022/11/13 14:17:18 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 void 	*ft_memset(void *b, int c, size_t len);
-int		ft_putchar_fd(char c);
 void 	ft_putendl_fd(char *s, int fd);
+void    ft_putchar_fd(char c, int fd);
 void 	ft_putnbr_fd(int n, int fd);
 void 	ft_putstr_fd(char *s, int fd);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
