@@ -6,7 +6,7 @@
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 18:12:09 by dferjul           #+#    #+#             */
-/*   Updated: 2022/11/14 19:17:39 by dferjul          ###   ########.fr       */
+/*   Updated: 2022/11/15 01:40:52 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -16,7 +16,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	size_t	i;
 
 	i = 0;
-	while(s1[i] && i < n)
+	while (s1[i] && i < n)
 	{
 		if (s1[i] != s2[i])
 			return (s1[i] - s2[i]);
