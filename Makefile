@@ -6,7 +6,7 @@
 #    By: dferjul <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:40:08 by dferjul           #+#    #+#              #
-#    Updated: 2022/11/12 17:28:36 by dferjul          ###   ########.fr        #
+#    Updated: 2022/11/15 23:22:28 by dferjul          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,10 +27,14 @@ SRCS	=	ft_isalpha.c \
 			ft_tolower.c \
 			ft_toupper.c \
 			ft_bzero.c \
+			ft_memcpy.c \
+			ft_strrchr.c \
+			ft_strncmp.c \
+
 
 OBJS	= 	$(SRCS:.c=.o)
 
-CC		=	cc
+CC		=	gcc
 
 CFLAGS	=	-Wall -Werror -Wextra
 
@@ -43,6 +47,10 @@ NAME	=	libft.a
 all : $(NAME)
 
 $(NAME) : $(OBJS)
+	ar -rcs $@ $^
+
+clean :
+	$(RM) $(OBJS)
 
 fclean : clean
 	$(RM) $(NAME)

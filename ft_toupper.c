@@ -6,13 +6,13 @@
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 18:11:42 by dferjul           #+#    #+#             */
-/*   Updated: 2022/11/07 18:12:03 by dferjul          ###   ########.fr       */
+/*   Updated: 2022/11/15 23:30:32 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-		return (c = c - 32);
-	return (0);
+		return (c - 32);
+	return (c);
 }
