@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -28,4 +29,11 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		while (i < len)
 			d++ = s++;
 	return (dst);
+=======
+#include <libft.h>
+
+void *memmove(void *dest, const void *src, size_t n)
+{
+	
+>>>>>>> 624642a1d6a1906af5f500eea5f9189015c53bca
 }

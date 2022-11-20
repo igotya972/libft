@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	main(void)
+int	main (void)
 {
-	printf("%d", );
-	return 0;
+	printf ("%d", );
+	return (0);
 }
