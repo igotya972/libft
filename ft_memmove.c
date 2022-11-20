@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,7 +6,7 @@
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 14:21:15 by dferjul           #+#    #+#             */
-/*   Updated: 2022/11/20 14:43:08 by dferjul          ###   ########.fr       */
+/*   Updated: 2022/11/20 18:14:01 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +28,4 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		while (i < len)
 			d++ = s++;
 	return (dst);
-=======
-#include <libft.h>
-
-void *memmove(void *dest, const void *src, size_t n)
-{
-	
->>>>>>> 624642a1d6a1906af5f500eea5f9189015c53bca
 }
