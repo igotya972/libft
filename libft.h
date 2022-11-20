@@ -6,7 +6,7 @@
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 19:31:28 by dferjul           #+#    #+#             */
-/*   Updated: 2022/11/15 01:46:39 by dferjul          ###   ########.fr       */
+/*   Updated: 2022/11/20 20:09:10 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,7 @@ char	*ft_strchr(const char *s, int c);
 size_t	ft_strlen(const char *s);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+int		ft_atoi(const char *str);
+void    *ft_memmove(void *dst, const void *src, size_t len);
 
 #endif
