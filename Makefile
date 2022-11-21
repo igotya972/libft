@@ -6,7 +6,7 @@
 #    By: dferjul <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:40:08 by dferjul           #+#    #+#              #
-#    Updated: 2022/11/20 20:09:21 by dferjul          ###   ########.fr        #
+#    Updated: 2022/11/21 18:54:52 by dferjul          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,10 @@ SRCS	=	ft_isalpha.c \
 			ft_strncmp.c \
 			ft_atoi.c	\
 			ft_memmove.c \
+			ft_memcmp.c \
+			ft_memcpy.c \
+			ft_strnstr.c \
+			ft_memchr.c \
 
 
 OBJS	= 	$(SRCS:.c=.o)
@@ -49,7 +53,7 @@ NAME	=	libft.a
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	ar -rcs $@ $^
+	ar -rcs $(NAME) $(OBJS)
 
 clean :
 	$(RM) $(OBJS)
@@ -59,4 +63,4 @@ fclean : clean
 
 re : fclean all
 
-.PHONY : all $(NAME) clean fclean re
+.PHONY : all libft.a clean fclean re

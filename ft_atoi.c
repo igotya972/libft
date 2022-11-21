@@ -6,7 +6,7 @@
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 18:27:15 by dferjul           #+#    #+#             */
-/*   Updated: 2022/11/20 19:18:38 by dferjul          ###   ########.fr       */
+/*   Updated: 2022/11/21 16:28:50 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -35,9 +35,7 @@ int	ft_atoi(const char *str)
 		result += (str[i] - 48);
 		i++;
 		if (!(str[i] < '0' || str[i] > '9'))
-		{
 			result *= 10;
-		}
 	}
 	return (result * sign);
 }
