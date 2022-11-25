@@ -6,7 +6,7 @@
 #    By: dferjul <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:40:08 by dferjul           #+#    #+#              #
-#    Updated: 2022/11/21 18:54:52 by dferjul          ###   ########.fr        #
+#    Updated: 2022/11/25 05:50:55 by dferjul          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,6 +36,10 @@ SRCS	=	ft_isalpha.c \
 			ft_memcpy.c \
 			ft_strnstr.c \
 			ft_memchr.c \
+			ft_calloc.c \
+			ft_substr.c \
+			ft_strjoin.c \
+			ft_strmapi.c \
 
 
 OBJS	= 	$(SRCS:.c=.o)
