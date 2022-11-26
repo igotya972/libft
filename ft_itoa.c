@@ -6,43 +6,77 @@
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 00:04:37 by dferjul           #+#    #+#             */
-/*   Updated: 2022/11/26 03:21:47 by dferjul          ###   ########.fr       */
+/*   Updated: 2022/11/26 06:35:02 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	digit(int n)
+int	ft_digit(long int n)
 {
-	int digit;
-	int i;
+	int	i;
 
-	digit = 0;
-	while (i > 0) 
+	i = 0;
+	if (n < 0)
+		n *= -1;
+	if (n < 10)
+		return (1);
+	while (n)
 	{
-		i = n / 10;
-		digit++; 
+		n = n / 10;
+			i++;
 	}
-	return (digit)
+	return (i);
 }
 
-	ft_positif(int n)
+char	*ft_numeric(char *str, long int s)
 {
-	char 	*s;
 	int	i;
-	int	j;
-	i = 0;
-	if (n > 0)
+
+	i = ft_digit(s);
+	if (s == 0)
 	{
-		while (n > 0)
-		{
-			s[i] = n / 
+		str[0] = '0';
+		str[i] = '\0';
+		return (str);
+	}
+	if (s < 0)
+	{
+		s *= -1;
+		str[0] = '-';
+		i += 1;
+	}
+	while (s != 0)
+	{
+		str[i - 1] = s % 10 + 48;
+		s = s / 10;
+		i--;
+	}
+	return (str);
+}
 
 char	*ft_itoa(int n)
 {
-	char	*str;
-	int	i;
+	int			i;
+	char		*str;
+	long int	c;
 
-
-	
+	c = n;
+	i = ft_digit(n);
+	if (c >= 0)
+	{
+		str = malloc(sizeof(char) * (i + 1));
+		if (!str)
+			return (NULL);
+		str[i] = '\0';
+	}
+	else
+	{
+		str = malloc(sizeof(char) * (i + 2));
+		if (!str)
+			return (NULL);
+		str[i + 1] = '\0';
+	}
+	str = ft_numeric(str, c);
+	return (str);
 }
