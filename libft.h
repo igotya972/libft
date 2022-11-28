@@ -6,7 +6,7 @@
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 19:31:28 by dferjul           #+#    #+#             */
-/*   Updated: 2022/11/26 05:56:04 by dferjul          ###   ########.fr       */
+/*   Updated: 2022/11/29 00:28:56 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,11 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_calloc(size_t count, size_t size);
-char    *ft_substr(char const *s, unsigned int start, size_t len);
-char 	*ft_strjoin(char const *s1, char const *s2);
-char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_itoa(int n);
+char	**ft_split(char const *s, char c);
+char	*ft_strtrim(char const *s1, char const *set);
 
 #endif

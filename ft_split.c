@@ -6,7 +6,7 @@
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/27 01:19:21 by dferjul           #+#    #+#             */
-/*   Updated: 2022/11/28 02:40:16 by dferjul          ###   ########.fr       */
+/*   Updated: 2022/11/28 17:54:14 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,18 @@
 static int	ft_count_word(char const *s, char c )
 {
 	size_t	i;
-	int	j;
+	int		j;
 
 	i = 0;
 	j = 0;
 	while (s[i])
 	{
 		if (s[i] != c)
+		{
 			j++;
-			while(s[i] != c && s[i])
+			while (s[i] != c && s[i])
 				i++;
+		}
 		else
 			i++;
 	}
@@ -34,7 +36,7 @@ static int	ft_count_word(char const *s, char c )
 static char	*ft_strcpy_malloc(char const *s, char c)
 {
 	unsigned int	i;
-	char		*str;
+	char			*str;
 
 	i = 0;
 	while (s[i] != c && s[i])
@@ -52,19 +54,19 @@ static char	*ft_strcpy_malloc(char const *s, char c)
 	return (str);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	unsigned int	i;
 	unsigned int	j;
 	unsigned int	n;
-	char	**tab;
+	char			**tab;
 
 	i = 0;
 	j = 0;
 	n = ft_count_word(s, c);
-	if (!str)
-		return (0);
-	tab = malloc(sizeof(char *)) * (n + 1);
+	tab = malloc(sizeof(char *) * (n + 1));
+	if (!tab)
+		return (NULL);
 	while (s[i] && j < n)
 	{
 		if (s[i] != c)
@@ -77,6 +79,6 @@ char **ft_split(char const *s, char c)
 		else
 			i++;
 	}
-	tab[j] = '\0';
+	tab[j] = NULL;
 	return (tab);
 }

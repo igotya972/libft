@@ -6,13 +6,13 @@
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 04:30:38 by dferjul           #+#    #+#             */
-/*   Updated: 2022/11/25 05:29:34 by dferjul          ###   ########.fr       */
+/*   Updated: 2022/11/29 00:42:41 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	i;
 	size_t	j;
