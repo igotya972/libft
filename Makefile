@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dferjul <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: dferjul <dferjul@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:40:08 by dferjul           #+#    #+#              #
-#    Updated: 2022/12/01 19:44:50 by dferjul          ###   ########.fr        #
+#    Updated: 2023/01/10 19:47:36 by dferjul          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,11 @@ SRCS	=	ft_isalpha.c \
 			ft_itoa.c \
 			ft_split.c \
 			ft_strtrim.c \
+			ft_lstnew \
+			ft_lstadd_front \
+			ft_lstsize \
+			ft_lstlast \
+			ft_lstclear \
 
 OBJS	= 	$(SRCS:.c=.o)
 
