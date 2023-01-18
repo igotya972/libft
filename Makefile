@@ -6,7 +6,7 @@
 #    By: dferjul <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:40:08 by dferjul           #+#    #+#              #
-#    Updated: 2023/01/18 15:00:30 by dferjul          ###   ########.fr        #
+#    Updated: 2023/01/18 19:12:07 by dferjul          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,7 +75,7 @@ $(NAME) : $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
 
 bonus : $(OBJS_BONUS)
-		ar -rcs $(NAME) $(OBJS)
+		ar -rcs $(NAME) $(OBJS_BONUS)
 
 clean :
 	$(RM) $(OBJS) $(OBJS_BONUS)

@@ -6,7 +6,7 @@
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 16:32:02 by dferjul           #+#    #+#             */
-/*   Updated: 2023/01/18 14:51:16 by dferjul          ###   ########.fr       */
+/*   Updated: 2023/01/18 18:57:35 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	new->next = *lst;
-	*lst = new;
+	if (lst != NULL && new != NULL)
+	{
+		new->next = *lst;
+		*lst = new;
+	}
 }

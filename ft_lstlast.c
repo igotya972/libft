@@ -6,7 +6,7 @@
 /*   By: dferjul <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 18:50:47 by dferjul           #+#    #+#             */
-/*   Updated: 2023/01/18 14:56:04 by dferjul          ###   ########.fr       */
+/*   Updated: 2023/01/18 19:18:25 by dferjul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	while (lst != NULL)
-		lst = lst->next;
-	return (NULL);
+	if (lst)
+		while (lst != NULL)
+			lst = lst->next;
+	return (lst);
 }
