@@ -6,7 +6,7 @@
 #    By: dferjul <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:40:08 by dferjul           #+#    #+#              #
-#    Updated: 2023/01/18 19:12:07 by dferjul          ###   ########.fr        #
+#    Updated: 2023/01/19 21:08:40 by dferjul          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,6 +54,7 @@ SRCS_BONUS = ft_lstnew.c \
 			ft_lstadd_back.c \
 			ft_lstdelone.c \
 			ft_lstiter.c \
+			ft_lstmap.c \
 
 OBJS	= 	$(SRCS:.c=.o)
 
